@@ -1,10 +1,12 @@
 from collections import deque
 
-def is_plaindrome(value: str):
+def is_palindrome(value: str):
     deque_list = deque(value)
     new_list = []
     reverse_list = []
     value_length = int(len(deque_list))
+    if value == '':
+        return False
 
     for letter in range(0, value_length):
         new_list.append(deque_list[letter])
@@ -13,7 +15,7 @@ def is_plaindrome(value: str):
         reverse_list.append(deque_list[-letter])
 
     if new_list == reverse_list:
-        print(True)
+        return True
     else:
-        print(False)
+        return False
     return reverse_list
