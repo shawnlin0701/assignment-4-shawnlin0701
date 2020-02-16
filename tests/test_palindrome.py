@@ -7,10 +7,13 @@ def test_ValueError():
         is_palindrome('(a)')
 
 def test_empty_string():
-    assert is_palindrome('') is False
+    assert is_palindrome("") is False
 
 def test_a():
-    assert is_palindrome('a') is True
+    assert is_palindrome("a") is True
 
 def test_bb():
-    assert is_palindrome('bb') is True
+    assert is_palindrome("bb") is True
+
+def test_abc():
+    assert is_palindrome("abc") is False
