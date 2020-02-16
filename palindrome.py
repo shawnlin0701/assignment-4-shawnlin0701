@@ -1,10 +1,13 @@
 from collections import deque
 
 def is_palindrome(value: str):
-    deque_list = deque(value)
+
+    lowercase_value = list(map(lambda value:value.lower(), value))
+    deque_list = deque(lowercase_value)
     new_list = []
     reverse_list = []
     value_length = int(len(deque_list))
+
     if value == '':
         return False
 
