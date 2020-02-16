@@ -3,7 +3,7 @@
 import pytest
 from palindrome import is_palindrome
 
-def test_ValueError():
+def test_valueerror():
     with pytest.raises(ValueError):
         is_palindrome(int)
         is_palindrome(float)
@@ -29,5 +29,5 @@ def test_laval():
 def test_toronto():
     assert is_palindrome("toronto") is False
 
-def test_Able():
+def test_able():
     assert is_palindrome("Able was I ere I saw Elba") is True
