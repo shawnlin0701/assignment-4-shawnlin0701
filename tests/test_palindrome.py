@@ -1,10 +1,15 @@
-import pytest
+# pylint: disable=missing-docstring
 
+import pytest
 from palindrome import is_palindrome
 
 def test_ValueError():
     with pytest.raises(ValueError):
         is_palindrome(int)
+        is_palindrome(float)
+        is_palindrome(list)
+        is_palindrome(bool)
+        is_palindrome(type)
 
 def test_empty_string():
     assert is_palindrome("") is False
