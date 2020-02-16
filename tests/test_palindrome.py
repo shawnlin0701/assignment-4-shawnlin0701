@@ -17,3 +17,6 @@ def test_bb():
 
 def test_abc():
     assert is_palindrome("abc") is False
+
+def test_laval():
+    assert is_palindrome("laval") is True
