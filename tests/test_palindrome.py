@@ -4,7 +4,7 @@ from palindrome import is_palindrome
 
 def test_ValueError():
     with pytest.raises(ValueError):
-        is_palindrome('(a)')
+        is_palindrome(int)
 
 def test_empty_string():
     assert is_palindrome("") is False
