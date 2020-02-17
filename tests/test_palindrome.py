@@ -1,6 +1,4 @@
-"""
-high level support for mississ docstrings
-"""
+# pylint: disable=missing-docstring
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
