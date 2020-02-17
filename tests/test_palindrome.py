@@ -1,4 +1,9 @@
-# pylint: disable=missing-docstring
+"""
+high level support for mississ docstrings
+"""
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 
 import pytest
 from palindrome import is_palindrome

@@ -4,6 +4,7 @@ def is_palindrome(value: str):
 
     if isinstance(value, str) is False:
         raise ValueError
+
     lowercase_value = list(map(lambda value: value.lower(), value))
     deque_list = deque(lowercase_value)
     new_list = []
@@ -21,6 +22,4 @@ def is_palindrome(value: str):
 
     if new_list == reverse_list:
         return True
-    else:
-        return False
-    return reverse_list
+    return False
