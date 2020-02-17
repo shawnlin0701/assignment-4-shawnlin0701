@@ -20,6 +20,4 @@ def is_palindrome(value: str):
     for letter in range(1, value_length+1):
         reverse_list.append(deque_list[-letter])
 
-    if new_list == reverse_list:
-        return True
-    return False
+    return bool(new_list == reverse_list)
