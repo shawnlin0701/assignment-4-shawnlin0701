@@ -1,5 +1,4 @@
 # pylint: disable=missing-docstring
-disable=bad-option-value
 
 import pytest
 from palindrome import is_palindrome
