@@ -1,7 +1,12 @@
+"""
+palindrome.py code
+"""
 from collections import deque
 
 def is_palindrome(value: str):
-
+    """
+    validates strings as palindromes.
+    """
     if isinstance(value, str) is False:
         raise ValueError
 
